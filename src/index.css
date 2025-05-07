@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 120 2% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 2% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 2% 20%;
+
+    --primary: 122 48% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 24% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 20 14% 88%;
+    --muted-foreground: 120 2% 40%;
+
+    --accent: 199 92% 64%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 10% 85%;
+    --input: 20 10% 85%;
+    --ring: 122 48% 34%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 122 48% 15%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 122 48% 34%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 122 10% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 122 10% 20%;
+    --sidebar-ring: 122 50% 45%;
+  }
+
+  .dark {
+    --background: 120 10% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 120 10% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 120 10% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 122 48% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 24% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 120 5% 20%;
+    --muted-foreground: 120 5% 70%;
+
+    --accent: 199 92% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 120 5% 25%;
+    --input: 120 5% 25%;
+    --ring: 122 48% 45%;
+
+    --sidebar-background: 122 48% 15%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 122 48% 34%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 122 10% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 122 10% 20%;
+    --sidebar-ring: 122 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+}
+
+.rdoga-logo {
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.15));
+}
+
+.rdoga-input-group {
+  @apply space-y-2 mb-4;
+}
+
+.rdoga-card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:bg-white/50;
+}
